@@ -16,9 +16,9 @@
     --gold: #C9A84C;
     --gold-light: #E8C96A;
     --gold-dark: #8B6914;
-    --crimson: #8B1A1A;
-    --crimson-light: #C43030;
-    --crimson-glow: #E05555;
+    --crimson: #B8404A;
+    --crimson-light: #D9606A;
+    --crimson-glow: #F08088;
     --ember: #8B2500;
     --ember-light: #C43A00;
     --charcoal: #0A0805;
@@ -28,6 +28,7 @@
     --ivory: #EAD9B0;
     --ivory-dim: #B8A478;
     --white: #FAF6EC;
+    --note: #F0D79A;
   }
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -38,7 +39,7 @@
     background: var(--charcoal);
     color: var(--parchment);
     font-family: 'EB Garamond', Georgia, serif;
-    font-size: 18px;
+    font-size: 19px;
     line-height: 1.7;
     overflow-x: hidden;
   }
@@ -79,7 +80,7 @@
 
   .nav-logo {
     font-family: 'Cinzel Decorative', serif;
-    font-size: 0.85rem;
+    font-size: 1.05rem;
     font-weight: 700;
     color: var(--gold);
     letter-spacing: 0.15em;
@@ -90,7 +91,7 @@
 
   .nav-logo span {
     display: block;
-    font-size: 0.55rem;
+    font-size: 0.7rem;
     color: var(--ivory-dim);
     letter-spacing: 0.3em;
     font-family: 'Cinzel', serif;
@@ -107,7 +108,7 @@
     display: block;
     padding: 0.5rem 1.4rem;
     font-family: 'Cinzel', serif;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: 600;
     letter-spacing: 0.2em;
     text-transform: uppercase;
@@ -165,7 +166,7 @@
     position: absolute;
     inset: 0;
     background:
-      radial-gradient(ellipse 60% 50% at 50% 30%, rgba(139,26,26,0.22) 0%, transparent 70%),
+      radial-gradient(ellipse 60% 50% at 50% 30%, rgba(184,64,74,0.22) 0%, transparent 70%),
       radial-gradient(ellipse 80% 60% at 50% 100%, rgba(139,37,0,0.25) 0%, transparent 60%),
       linear-gradient(to bottom, #0A0805 0%, #120B06 50%, #0A0805 100%);
   }
@@ -178,7 +179,7 @@
     transform: translateX(-50%);
     width: 3px;
     height: 45%;
-    background: linear-gradient(to bottom, rgba(224,85,85,0.9), rgba(224,85,85,0.2), transparent);
+    background: linear-gradient(to bottom, rgba(240,128,136,0.9), rgba(240,128,136,0.2), transparent);
     filter: blur(2px);
     animation: starBeamPulse 4s ease-in-out infinite;
   }
@@ -203,16 +204,16 @@
   }
 
   @keyframes starGlow {
-    0%, 100% { transform: translate(-50%, -50%) scale(1); box-shadow: 0 0 20px 8px rgba(224,85,85,0.5); }
-    50% { transform: translate(-50%, -50%) scale(1.3); box-shadow: 0 0 40px 15px rgba(224,85,85,0.7); }
+    0%, 100% { transform: translate(-50%, -50%) scale(1); box-shadow: 0 0 20px 8px rgba(240,128,136,0.5); }
+    50% { transform: translate(-50%, -50%) scale(1.3); box-shadow: 0 0 40px 15px rgba(240,128,136,0.7); }
   }
 
   .hero-eyebrow {
     font-family: 'Cinzel', serif;
-    font-size: 0.65rem;
+    font-size: 0.76rem;
     font-weight: 600;
     letter-spacing: 0.5em;
-    color: var(--crimson-glow);
+    color: var(--note);
     text-transform: uppercase;
     margin-bottom: 1.5rem;
     opacity: 0;
@@ -278,7 +279,7 @@
     display: inline-block;
     padding: 0.9rem 2.8rem;
     font-family: 'Cinzel', serif;
-    font-size: 0.75rem;
+    font-size: 0.9rem;
     font-weight: 600;
     letter-spacing: 0.25em;
     text-transform: uppercase;
@@ -322,7 +323,7 @@
 
   .scroll-indicator span {
     font-family: 'Cinzel', serif;
-    font-size: 0.55rem;
+    font-size: 0.7rem;
     letter-spacing: 0.3em;
     color: var(--ivory-dim);
     text-transform: uppercase;
@@ -364,9 +365,9 @@
 
   .section-label {
     font-family: 'Cinzel', serif;
-    font-size: 0.6rem;
+    font-size: 0.72rem;
     letter-spacing: 0.5em;
-    color: var(--crimson-glow);
+    color: var(--note);
     text-transform: uppercase;
     margin-bottom: 1rem;
   }
@@ -394,7 +395,7 @@
     position: absolute;
     top: -0.5rem;
     left: 1.2rem;
-    font-size: 5rem;
+    font-size: 5.0rem;
     color: var(--gold);
     opacity: 0.15;
     font-family: Georgia, serif;
@@ -412,7 +413,7 @@
     display: block;
     margin-top: 0.8rem;
     font-family: 'Cinzel', serif;
-    font-size: 0.65rem;
+    font-size: 0.76rem;
     letter-spacing: 0.2em;
     color: var(--gold);
     font-style: normal;
@@ -452,7 +453,7 @@
 
   .scene-card-number {
     font-family: 'Cinzel Decorative', serif;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     color: var(--gold);
     letter-spacing: 0.3em;
     margin-bottom: 1rem;
@@ -461,7 +462,7 @@
 
   .scene-card h3 {
     font-family: 'Cinzel', serif;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-weight: 600;
     color: var(--gold-light);
     margin-bottom: 0.8rem;
@@ -469,8 +470,8 @@
   }
 
   .scene-card p {
-    font-size: 0.95rem;
-    color: var(--ivory-dim);
+    font-size: 1.15rem;
+    color: var(--ivory);
     line-height: 1.7;
   }
 
@@ -512,9 +513,9 @@
 
   .char-title {
     font-family: 'Cinzel', serif;
-    font-size: 0.6rem;
+    font-size: 0.72rem;
     letter-spacing: 0.3em;
-    color: var(--crimson-glow);
+    color: var(--note);
     text-transform: uppercase;
     margin-bottom: 0.3rem;
   }
@@ -529,7 +530,7 @@
 
   .char-lineage {
     font-family: 'Cinzel', serif;
-    font-size: 0.6rem;
+    font-size: 0.72rem;
     color: var(--ivory-dim);
     letter-spacing: 0.2em;
     text-transform: uppercase;
@@ -537,7 +538,7 @@
   }
 
   .char-desc {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     color: var(--ivory-dim);
     font-style: italic;
     line-height: 1.6;
@@ -545,7 +546,7 @@
 
   /* Legacy section */
   .legacy-band {
-    background: linear-gradient(135deg, rgba(139,26,26,0.12), rgba(139,37,0,0.12));
+    background: linear-gradient(135deg, rgba(184,64,74,0.12), rgba(139,37,0,0.12));
     border-top: 1px solid rgba(201,168,76,0.2);
     border-bottom: 1px solid rgba(201,168,76,0.2);
     padding: 5rem 2rem;
@@ -586,7 +587,7 @@
   ============================================ */
   .director-hero {
     padding: 10rem 2rem 6rem;
-    background: linear-gradient(to bottom, rgba(139,26,26,0.06), transparent);
+    background: linear-gradient(to bottom, rgba(184,64,74,0.06), transparent);
     border-bottom: 1px solid rgba(201,168,76,0.15);
   }
 
@@ -605,15 +606,15 @@
 
   .director-hero .subtitle {
     font-family: 'Cinzel', serif;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     letter-spacing: 0.4em;
-    color: var(--crimson-glow);
+    color: var(--note);
     text-transform: uppercase;
     margin-bottom: 2rem;
   }
 
   .director-hero p {
-    font-size: 1.15rem;
+    font-size: 1.3rem;
     color: var(--parchment);
     line-height: 1.8;
     max-width: 750px;
@@ -636,23 +637,23 @@
 
   .tone-act-label {
     font-family: 'Cinzel', serif;
-    font-size: 0.6rem;
+    font-size: 0.72rem;
     letter-spacing: 0.3em;
-    color: var(--crimson-glow);
+    color: var(--note);
     text-transform: uppercase;
     margin-bottom: 0.5rem;
   }
 
   .tone-act h4 {
     font-family: 'Cinzel', serif;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: var(--gold);
     margin-bottom: 0.8rem;
   }
 
   .tone-act p {
-    font-size: 0.9rem;
-    color: var(--ivory-dim);
+    font-size: 1.1rem;
+    color: var(--ivory);
     line-height: 1.7;
     font-style: italic;
   }
@@ -679,7 +680,7 @@
   .theme-key {
     padding: 1.5rem;
     font-family: 'Cinzel', serif;
-    font-size: 0.75rem;
+    font-size: 0.9rem;
     font-weight: 600;
     letter-spacing: 0.1em;
     color: var(--gold);
@@ -691,7 +692,7 @@
 
   .theme-val {
     padding: 1.5rem;
-    font-size: 0.95rem;
+    font-size: 1.15rem;
     color: var(--parchment);
     line-height: 1.7;
   }
@@ -726,8 +727,8 @@
 
   .char-deep-header .lineage-tag {
     font-family: 'Cinzel', serif;
-    font-size: 0.6rem;
-    color: var(--crimson-glow);
+    font-size: 0.72rem;
+    color: var(--note);
     letter-spacing: 0.2em;
     text-transform: uppercase;
   }
@@ -737,8 +738,8 @@
   }
 
   .char-deep-body p {
-    font-size: 0.9rem;
-    color: var(--ivory-dim);
+    font-size: 1.1rem;
+    color: var(--ivory);
     line-height: 1.7;
     margin-bottom: 0.8rem;
   }
@@ -750,7 +751,7 @@
     padding-top: 1rem;
     border-top: 1px solid rgba(201,168,76,0.08);
     font-family: 'Cinzel', serif;
-    font-size: 0.65rem;
+    font-size: 0.76rem;
     letter-spacing: 0.15em;
     color: var(--gold);
     text-transform: uppercase;
@@ -758,7 +759,7 @@
 
   .char-arc span {
     font-family: 'EB Garamond', serif;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     color: var(--ivory-dim);
     text-transform: none;
     letter-spacing: 0;
@@ -770,8 +771,8 @@
   /* Director's mandatory scene */
   .mandatory-scene {
     margin: 4rem 0;
-    background: rgba(139,26,26,0.06);
-    border: 1px solid rgba(224,85,85,0.2);
+    background: rgba(184,64,74,0.06);
+    border: 1px solid rgba(240,128,136,0.2);
     padding: 3rem;
     position: relative;
     overflow: hidden;
@@ -783,17 +784,17 @@
     right: -1rem;
     bottom: -2rem;
     font-family: 'Cinzel Decorative', serif;
-    font-size: 8rem;
-    color: rgba(224,85,85,0.04);
+    font-size: 8.0rem;
+    color: rgba(240,128,136,0.04);
     font-weight: 900;
     pointer-events: none;
   }
 
   .mandatory-scene .label {
     font-family: 'Cinzel', serif;
-    font-size: 0.6rem;
+    font-size: 0.72rem;
     letter-spacing: 0.4em;
-    color: var(--crimson-glow);
+    color: var(--note);
     text-transform: uppercase;
     margin-bottom: 1rem;
   }
@@ -806,7 +807,7 @@
   }
 
   .mandatory-scene p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: var(--parchment);
     line-height: 1.8;
     margin-bottom: 1rem;
@@ -829,10 +830,10 @@
   .confidential-badge {
     display: inline-block;
     font-family: 'Cinzel', serif;
-    font-size: 0.55rem;
+    font-size: 0.7rem;
     letter-spacing: 0.4em;
-    color: var(--ember-light);
-    border: 1px solid var(--ember-light);
+    color: var(--note);
+    border: 1px solid var(--note);
     padding: 0.3rem 0.8rem;
     margin-bottom: 1.5rem;
     text-transform: uppercase;
@@ -848,7 +849,7 @@
 
   .studio-hero .sub {
     font-family: 'Cinzel', serif;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     letter-spacing: 0.3em;
     color: var(--ivory-dim);
     text-transform: uppercase;
@@ -881,15 +882,15 @@
 
   .headline-num .num-label {
     font-family: 'Cinzel', serif;
-    font-size: 0.6rem;
+    font-size: 0.72rem;
     letter-spacing: 0.25em;
     color: var(--ivory-dim);
     text-transform: uppercase;
   }
 
   .headline-num .num-sub {
-    font-size: 0.8rem;
-    color: var(--crimson-glow);
+    font-size: 1.0rem;
+    color: var(--note);
     margin-top: 0.3rem;
     font-style: italic;
   }
@@ -915,9 +916,9 @@
 
   .cast-role {
     font-family: 'Cinzel', serif;
-    font-size: 0.55rem;
+    font-size: 0.7rem;
     letter-spacing: 0.3em;
-    color: var(--crimson-glow);
+    color: var(--note);
     text-transform: uppercase;
     margin-bottom: 0.3rem;
   }
@@ -931,21 +932,21 @@
 
   .cast-actor {
     font-family: 'Cinzel', serif;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: var(--parchment);
     margin-bottom: 0.5rem;
   }
 
   .cast-fee {
-    font-size: 0.8rem;
+    font-size: 1.0rem;
     color: var(--ivory-dim);
     font-style: italic;
   }
 
   .cast-note {
     margin-top: 0.8rem;
-    font-size: 0.8rem;
+    font-size: 1.0rem;
     color: var(--ivory-dim);
     line-height: 1.5;
     border-top: 1px solid rgba(201,168,76,0.1);
@@ -980,14 +981,14 @@
 
   .location-name {
     font-family: 'Cinzel', serif;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     font-weight: 600;
     color: var(--gold-light);
     margin-bottom: 0.3rem;
   }
 
   .location-specifics {
-    font-size: 0.85rem;
+    font-size: 1.05rem;
     color: var(--ivory-dim);
     line-height: 1.6;
   }
@@ -996,12 +997,12 @@
     display: inline-block;
     margin-top: 0.4rem;
     padding: 0.2rem 0.6rem;
-    background: rgba(224,85,85,0.1);
-    border: 1px solid rgba(224,85,85,0.3);
+    background: rgba(240,128,136,0.12);
+    border: 1px solid rgba(240,128,136,0.5);
     font-family: 'Cinzel', serif;
-    font-size: 0.55rem;
+    font-size: 0.7rem;
     letter-spacing: 0.15em;
-    color: var(--crimson-glow);
+    color: var(--note);
     text-transform: uppercase;
   }
 
@@ -1010,12 +1011,12 @@
     width: 100%;
     border-collapse: collapse;
     margin: 2rem 0;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
 
   .comp-table th {
     font-family: 'Cinzel', serif;
-    font-size: 0.6rem;
+    font-size: 0.72rem;
     letter-spacing: 0.2em;
     color: var(--gold);
     text-transform: uppercase;
@@ -1040,8 +1041,8 @@
   }
 
   .comp-table .positive { color: #6BC76B; }
-  .comp-table .negative { color: #C76B6B; }
-  .comp-table .counter { color: var(--crimson-glow); font-style: italic; }
+  .comp-table .negative { color: #E3B26B; }
+  .comp-table .counter { color: var(--note); font-style: italic; }
 
   /* Revenue breakdown */
   .revenue-grid {
@@ -1059,9 +1060,9 @@
 
   .revenue-card h4 {
     font-family: 'Cinzel', serif;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     letter-spacing: 0.2em;
-    color: var(--crimson-glow);
+    color: var(--note);
     text-transform: uppercase;
     margin-bottom: 1rem;
   }
@@ -1072,7 +1073,7 @@
     align-items: baseline;
     padding: 0.5rem 0;
     border-bottom: 1px solid rgba(201,168,76,0.06);
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
 
   .revenue-item:last-child { border-bottom: none; }
@@ -1082,7 +1083,7 @@
 
   /* Investment case */
   .investment-case {
-    background: linear-gradient(135deg, rgba(139,26,26,0.1), rgba(139,37,0,0.1));
+    background: linear-gradient(135deg, rgba(184,64,74,0.1), rgba(139,37,0,0.1));
     border: 1px solid rgba(201,168,76,0.25);
     padding: 4rem;
     margin: 4rem 0;
@@ -1107,7 +1108,7 @@
   }
 
   .investment-case p {
-    font-size: 1.05rem;
+    font-size: 1.25rem;
     color: var(--parchment);
     line-height: 1.8;
     max-width: 750px;
@@ -1131,23 +1132,23 @@
 
   .dist-phase {
     font-family: 'Cinzel', serif;
-    font-size: 0.6rem;
+    font-size: 0.72rem;
     letter-spacing: 0.3em;
-    color: var(--crimson-glow);
+    color: var(--note);
     text-transform: uppercase;
     margin-bottom: 0.5rem;
   }
 
   .dist-title {
     font-family: 'Cinzel', serif;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     color: var(--gold);
     font-weight: 600;
     margin-bottom: 0.8rem;
   }
 
   .dist-desc {
-    font-size: 0.85rem;
+    font-size: 1.05rem;
     color: var(--ivory-dim);
     line-height: 1.6;
   }
@@ -1188,8 +1189,8 @@
   }
 
   .text-body {
-    font-size: 1rem;
-    color: var(--ivory-dim);
+    font-size: 1.2rem;
+    color: var(--ivory);
     line-height: 1.85;
     margin-bottom: 1.2rem;
   }
@@ -1209,14 +1210,14 @@
 
   footer .footer-logo {
     font-family: 'Cinzel Decorative', serif;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: var(--gold);
     margin-bottom: 0.5rem;
   }
 
   footer .footer-sub {
     font-family: 'Cinzel', serif;
-    font-size: 0.6rem;
+    font-size: 0.72rem;
     letter-spacing: 0.35em;
     color: var(--ivory-dim);
     text-transform: uppercase;
@@ -1233,7 +1234,7 @@
 
   footer .footer-links a {
     font-family: 'Cinzel', serif;
-    font-size: 0.6rem;
+    font-size: 0.72rem;
     letter-spacing: 0.2em;
     color: var(--ivory-dim);
     text-decoration: none;
@@ -1244,7 +1245,7 @@
   footer .footer-links a:hover { color: var(--gold); }
 
   footer .footer-legal {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
     color: rgba(184,164,120,0.4);
     line-height: 1.6;
   }
@@ -1269,7 +1270,7 @@
 
     .nav-tabs li a {
       padding: 0.5rem 0.8rem;
-      font-size: 0.6rem;
+      font-size: 0.72rem;
     }
 
     .nav-logo span { display: none; }
@@ -1295,7 +1296,7 @@
 
   .budget-bar-label {
     font-family: 'Cinzel', serif;
-    font-size: 0.65rem;
+    font-size: 0.76rem;
     color: var(--ivory-dim);
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -1317,7 +1318,7 @@
 
   .budget-bar-value {
     font-family: 'Cinzel', serif;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     color: var(--gold);
     text-align: right;
   }
@@ -1339,7 +1340,7 @@
 
   .audience-pct {
     font-family: 'Cinzel Decorative', serif;
-    font-size: 2rem;
+    font-size: 2.0rem;
     color: var(--gold);
     line-height: 1;
     margin-bottom: 0.5rem;
@@ -1347,15 +1348,15 @@
 
   .audience-label {
     font-family: 'Cinzel', serif;
-    font-size: 0.6rem;
+    font-size: 0.72rem;
     letter-spacing: 0.2em;
-    color: var(--crimson-glow);
+    color: var(--note);
     text-transform: uppercase;
     margin-bottom: 0.5rem;
   }
 
   .audience-desc {
-    font-size: 0.8rem;
+    font-size: 1.0rem;
     color: var(--ivory-dim);
     line-height: 1.5;
   }
@@ -1368,10 +1369,8 @@
 </head>
 <body>
 
-<!-- Star Canvas -->
 <canvas id="star-canvas"></canvas>
 
-<!-- Navigation -->
 <nav>
   <div class="nav-inner">
     <a href="#" class="nav-logo" onclick="showSection('public'); return false;">
@@ -1387,11 +1386,10 @@
 </nav>
 
 <!-- ============================================================
-     SECTION 1: THE FILM (PUBLIC / TRAILER)
+     SECTION 1: THE FILM (PUBLIC / TRAILER) — SPOILER-FREE
 ============================================================ -->
 <section class="page-section active" id="section-public">
 
-  <!-- Cinematic Hero -->
   <div class="hero-cinematic">
     <div class="hero-bg"></div>
     <div class="star-beam"></div>
@@ -1399,9 +1397,9 @@
     <h1 class="hero-title">The Wise Men</h1>
     <p class="hero-subtitle">Journey of the Star</p>
     <div class="hero-divider"></div>
-    <p class="hero-logline">Don't let the Legacy die on your watch.</p>
+    <p class="hero-logline">Three broken men. One impossible promise. And a star that has been waiting six hundred years to call in the debt.</p>
     <div class="hero-cta">
-      <a href="#story" class="btn-primary">Enter the Journey</a>
+      <a href="#story" class="btn-primary" onclick="document.getElementById('story').scrollIntoView({behavior:'smooth'}); return false;">Enter the Journey</a>
     </div>
     <div class="scroll-indicator">
       <span>Scroll</span>
@@ -1409,21 +1407,20 @@
     </div>
   </div>
 
-  <!-- The Hook -->
   <div class="section-block" id="story">
     <div class="section-inner">
       <div class="two-col">
         <div>
           <p class="section-label">The Story</p>
           <h2 class="section-heading">This Is Not the Story You Were Told</h2>
-          <p class="text-body">In a world on the brink of war between the Roman and Parthian Empires, three men are pulled from their ordinary lives by a light they cannot explain and a prophecy they don't fully believe.</p>
-          <p class="text-body">Caspar is a thief running from a murder he couldn't prevent. Balthazar is a prince who has mistaken wealth for purpose. Melchior is a dying old man carrying the weight of six centuries of waiting.</p>
-          <p class="text-body">They are not wise men. Not yet. They are three strangers crammed into one wagon in the middle of a desert, hunted by an empire, and chosen by something they don't have a name for.</p>
+          <p class="text-body">In a world on the brink of war between the Roman and Parthian Empires, three men are pulled from their ordinary lives by a light they cannot explain and a prophecy they do not fully believe.</p>
+          <p class="text-body">Caspar is a thief who has never once stayed to face anything. Balthazar is a prince who has mistaken rank for purpose. Melchior is a dying old man carrying six centuries of waiting.</p>
+          <p class="text-body">They are not wise men. Not yet. They are three strangers on one road, hunted by empires, and chosen by something they do not have a name for.</p>
         </div>
         <div>
-          <div class="pull-quote">"The furnace wasn't just a place. It was a promise."</div>
-          <p class="text-body">600 years before Bethlehem, three men walked into fire and were not consumed. Shadrach. Meshach. Abednego. Their descendants were charged with one mission: be there when the promise is fulfilled.</p>
-          <p class="text-body">The star is the signal. The journey is the cost. The manger is the answer to a question every generation of their bloodline has carried alone.</p>
+          <div class="pull-quote">"Their descendants are still keeping the fire."</div>
+          <p class="text-body">Six hundred years before Bethlehem, three men walked into a furnace in Babylon and were not consumed. Shadrach. Meshach. Abednego. Their bloodlines were charged with one duty: be there when the promise is fulfilled.</p>
+          <p class="text-body">The star is the signal. The journey is the cost. The manger is the answer to a question every generation of that bloodline has carried alone.</p>
         </div>
       </div>
     </div>
@@ -1431,701 +1428,548 @@
 
   <div class="gold-rule"></div>
 
-  <!-- Characters Public -->
   <div class="section-block">
     <div class="section-inner">
       <p class="section-label">The Three</p>
       <h2 class="section-heading">Sons of the Furnace</h2>
       <div class="character-trio">
         <div class="char-card caspar">
-          <div class="char-glyph">🔥</div>
-          <p class="char-title">The Rogue</p>
+          <div class="char-glyph">&#10022;</div>
+          <p class="char-title">The Thief</p>
           <h3 class="char-name">Caspar</h3>
-          <p class="char-lineage">Lineage of Abednego</p>
-          <p class="char-desc">A thief with a stolen box of frankincense and a dead mentor's unfinished mission. The fastest man in any room. The last person the universe should trust with something this important.</p>
+          <p class="char-lineage">Line of Abednego</p>
+          <p class="char-desc">Copper-haired, quick-handed, and always reading the exits first. He has a baby on the way, no money, and a lifetime of running from the one thing he cannot steal his way out of.</p>
         </div>
         <div class="char-card balthazar">
-          <div class="char-glyph">⚗️</div>
+          <div class="char-glyph">&#10022;</div>
           <p class="char-title">The Prince</p>
           <h3 class="char-name">Balthazar</h3>
-          <p class="char-lineage">Lineage of Meshach</p>
-          <p class="char-desc">Brilliant, arrogant, and completely wrong about what matters. He carries a gold imperial seal that represents everything he thinks he is. The journey will cost him everything.</p>
+          <p class="char-lineage">Line of Meshach</p>
+          <p class="char-desc">A Parthian nobleman and the finest astronomer of his age. The King of Kings has just sent him east with a golden bracelet on his wrist and an escort that is not there to protect him.</p>
         </div>
         <div class="char-card melchior">
-          <div class="char-glyph">📜</div>
+          <div class="char-glyph">&#10022;</div>
           <p class="char-title">The Keeper</p>
           <h3 class="char-name">Melchior</h3>
-          <p class="char-lineage">Lineage of Shadrach</p>
-          <p class="char-desc">Terminally ill and absolutely certain. He has been keeping the fire burning for fifty years. He packed his own burial spices for a journey he may not survive.</p>
+          <p class="char-lineage">Line of Shadrach</p>
+          <p class="char-desc">An old man on a mountain, raising orphans and keeping the watch. He is very sick, he knows it, and he has been waiting fifty years for a star to move.</p>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Key Moments -->
-  <div class="section-block" style="background: rgba(18,15,10,0.6);">
+  <div class="gold-rule"></div>
+
+  <div class="section-block">
     <div class="section-inner">
       <p class="section-label">The Journey</p>
-      <h2 class="section-heading">Moments That Will Stay With You</h2>
+      <h2 class="section-heading">Six Movements. One Road.</h2>
       <div class="scene-grid">
         <div class="scene-card">
-          <p class="scene-card-number">I · Ctesiphon</p>
+          <p class="scene-card-number">I</p>
           <h3>The Library Burns</h3>
-          <p>Caspar watches his mentor die. He drops the scrolls into the fire to reach the frankincense. It is a moment of moral cowardice that becomes the wound the entire journey has to heal.</p>
+          <p>In a ruined observatory north-east of Damascus, a keeper stops counting the years. A hunter arrives. A thief runs with the one thing he can carry, and the sky above the rooftops turns sapphire.</p>
         </div>
         <div class="scene-card">
-          <p class="scene-card-number">II · The Wagon</p>
-          <h3>The Revelation</h3>
-          <p>Three strangers. One old man. Two ancient relics. And a lineage that connects them across 600 years of exile, disgrace, and forgotten fire. Melchior says the words. The world shifts under their feet.</p>
+          <p class="scene-card-number">II</p>
+          <h3>The Wagon</h3>
+          <p>A prince, a thief and an old man end up in the back of a salt wagon, with nothing in common but a road. They fix an axle together before they ever learn to trust one another.</p>
         </div>
         <div class="scene-card">
-          <p class="scene-card-number">III · Jerusalem</p>
+          <p class="scene-card-number">III</p>
+          <h3>The Salt</h3>
+          <p>The desert does not care about princes. One wrong line on a star-table, one dry cistern, and everything the three men believe about themselves is put to the test.</p>
+        </div>
+        <div class="scene-card">
+          <p class="scene-card-number">IV</p>
           <h3>The Viper's Den</h3>
-          <p>Herod greets them like kings. Dresses them in his colors. Tells them, in the softest voice, to bring him the location of the child. His eyes don't blink. Not once.</p>
+          <p>Jerusalem opens its gates. Herod welcomes the strangers like kings, dresses them in his own colors, and asks where the child is to be found in a very soft voice.</p>
         </div>
         <div class="scene-card">
-          <p class="scene-card-number">IV · The Escape</p>
-          <h3>Through the Fire Again</h3>
-          <p>Herod sets the slums alight to trap them. Caspar finds the path through. It is not a coincidence. It is the bloodline. Balthazar looks at his gold seal, everything he has worked for.</p>
-        </div>
-        <div class="scene-card">
-          <p class="scene-card-number">V · Bethlehem</p>
+          <p class="scene-card-number">V</p>
           <h3>The Heavy Peace</h3>
-          <p>The noise stops. The flames in the stable don't flicker. The animals are still. And three men who arrived as a thief, a prince, and a dying elder — they enter, and are none of those things anymore.</p>
+          <p>The road narrows to a hillside village and a small stone house. The noise of the whole journey stops. Even the animals go still.</p>
         </div>
         <div class="scene-card">
-          <p class="scene-card-number">VI · The Road</p>
+          <p class="scene-card-number">VI</p>
           <h3>The Passing of the Fire</h3>
-          <p>By the Dead Sea, Caspar takes the staff and carves three names into the wood. Two trails of dust head in opposite directions across the desert. The star is gone. The sun is rising.</p>
+          <p>A promise is only kept if someone carries it further than the man who made it. The star fades, the sun rises, and the road continues.</p>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Legacy Band -->
+  <div class="section-block" style="padding-top:2rem;">
+    <div class="section-inner">
+      <div class="quote-block">
+        <blockquote>I have been exiled by the most brilliant minds in Ctesiphon. I have survived a palace sentence, a sword in my own tent, and a river. And yet the gods, in their infinite twisted irony, deliver me a tomb-robber and a madman in a salt-wagon.</blockquote>
+        <cite>Balthazar</cite>
+      </div>
+      <div class="quote-block">
+        <blockquote>You have travelled far to stand in a room that does not need you. That is either faith or a very expensive mistake.</blockquote>
+        <cite>Herod</cite>
+      </div>
+      <div class="quote-block">
+        <blockquote>Doors that open that easy cost the most.</blockquote>
+        <cite>Caspar</cite>
+      </div>
+      <div class="quote-block">
+        <blockquote>The fire keeps itself. It never needed your Order.</blockquote>
+        <cite>A Keeper of the Watch</cite>
+      </div>
+    </div>
+  </div>
+
   <div class="legacy-band">
-    <p class="legacy-number">600</p>
+    <div class="legacy-number">600</div>
     <p class="legacy-text">Years. One Promise. Three Bloodlines.</p>
     <p class="legacy-quote">"A life's true value is not measured by what we gather for ourselves, but by the fire we keep burning for those who come 600 years after us."</p>
   </div>
 
-  <!-- Primary Quote -->
   <div class="section-block">
-    <div class="section-inner" style="max-width: 800px; text-align: center;">
-      <div class="quote-block" style="border: none; padding: 3rem; background: transparent;">
-        <blockquote style="font-size: clamp(1.5rem, 3vw, 2.2rem); color: var(--gold-light);">Don't let the legacy die on your watch.</blockquote>
-        <cite style="text-align: center;">— The Governing Thematic Line</cite>
-      </div>
-      <p class="text-body" style="text-align: center; font-size: 1.1rem;">This is not a Christmas film. It is a survival epic about three men who go into a furnace of their own making, and come out as something the world has never seen.</p>
-      <div style="margin-top: 2.5rem;">
-        <a href="https://thewisemenfilm.com" class="btn-primary" target="_blank">thewisemenfilm.com</a>
-      </div>
+    <div class="section-inner" style="text-align:center;">
+      <p class="section-label">Not a Christmas Film</p>
+      <h2 class="section-heading">It Is a Road Film About a Promise.</h2>
+      <p class="text-body" style="max-width:720px;margin:0 auto 1.5rem;">A historical action epic in the tradition of <em>Kingdom of Heaven</em>, <em>Gladiator</em> and <em>The Passion of the Christ</em>: real danger, real faith, and three men who earn the right to kneel.</p>
+      <p class="hero-eyebrow" style="opacity:1;animation:none;margin-top:2rem;">Follow the Journey &middot; @TheWiseMenFilm</p>
     </div>
   </div>
-
 </section>
 
 <!-- ============================================================
-     SECTION 2: THE DIRECTOR
+     SECTION 2: THE DIRECTOR — SPOILER-FREE
 ============================================================ -->
 <section class="page-section" id="section-director">
 
   <div class="director-hero">
     <div class="director-hero-inner">
-      <p class="subtitle">Director's Package · Confidential</p>
-      <h1>The Language This Film Requires</h1>
-      <p>This is a film built on masculine emotional vulnerability inside a brutally physical world. Men who bleed, crack, and break — and every moment of it earned. The spiritual register must be powerful without preaching. The action must cost someone something personal every single time.</p>
+      <p class="subtitle">Director's Package &middot; Target: Antoine Fuqua</p>
+      <h1>Survival, Conscience, and Restraint</h1>
+      <p>A 109-page feature screenplay about faith under pressure. It asks for a director who can stage kinetic, physical action without ever letting it drown the quiet: <em>Emancipation</em>'s endurance, <em>The Equalizer</em>'s patience, <em>The Magnificent Seven</em>'s ensemble, <em>Gladiator II</em>'s scale. The rule of the film is restraint over spectacle, especially around anything spiritual.</p>
     </div>
   </div>
 
-  <!-- Target Director -->
   <div class="section-block">
     <div class="section-inner">
-      <p class="section-label">Target Director</p>
-      <h2 class="section-heading">Antoine Fuqua</h2>
-      <div class="two-col">
-        <div>
-          <p class="text-body">Fuqua's language — visceral physical consequence wrapped around deep moral reckonings — is the precise register this film requires. His men don't perform suffering. They carry it. That credibility is non-negotiable for the journey from Ctesiphon to Bethlehem.</p>
-          <p class="text-body">His demonstrated spiritual register in <em>Emancipation</em> proves he can handle transcendence without sentimentality. His command of ensemble dynamics from <em>The Magnificent Seven</em> maps directly onto a three-man pressure-cooker structure. His visual scale in <em>Gladiator II</em> establishes the budget confidence this project requires.</p>
-          <p class="text-body">No other director currently working at this level combines the required elements: faith without preaching, action that costs, history that breathes, and the trust of studio finance at this scale.</p>
-        </div>
-        <div>
-          <div class="theme-stack">
-            <div class="theme-row">
-              <div class="theme-key">Comparable</div>
-              <div class="theme-val"><em>Emancipation</em> — spiritual stakes without proselytizing</div>
-            </div>
-            <div class="theme-row">
-              <div class="theme-key">Comparable</div>
-              <div class="theme-val"><em>The Equalizer</em> — righteous men of controlled violence</div>
-            </div>
-            <div class="theme-row">
-              <div class="theme-key">Comparable</div>
-              <div class="theme-val"><em>Magnificent Seven</em> — ensemble pressure-cooker dynamics</div>
-            </div>
-            <div class="theme-row">
-              <div class="theme-key">Budget Proof</div>
-              <div class="theme-val">Market rate $8–12M at this production scale. Established studio confidence at $95–120M range.</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <div class="gold-rule"></div>
-
-  <!-- Tone Compass -->
-  <div class="section-block" style="padding-top: 0;">
-    <div class="section-inner">
-      <p class="section-label">The Tone Map</p>
-      <h2 class="section-heading">Three Acts. Three Registers.</h2>
+      <p class="section-label">Tone Compass</p>
+      <h2 class="section-heading">Three Registers</h2>
       <div class="tone-compass">
         <div class="tone-act">
-          <p class="tone-act-label">Act I</p>
-          <h4>Ash &amp; Ember</h4>
-          <p>Kinetic, urgent, slightly disorienting. Three lives in motion before they understand they are heading toward each other. No music on the Ctesiphon escape — only fire and ragged breathing. The camera does not romanticize what it costs to run.</p>
+          <p class="tone-act-label">Acts I &ndash; II</p>
+          <h4>Propulsive</h4>
+          <p>Rooftops, rivers, fire and a thief who has never been caught. Fast, tactile, funny when it can be. The camera runs with Caspar.</p>
         </div>
         <div class="tone-act">
-          <p class="tone-act-label">Act II</p>
-          <h4>The Refining Fire</h4>
-          <p>Pressure-cooker intimacy. The wagon is the furnace. The desert is both threat and revelation. The banter is real but it is doing structural work. Every joke is a man defending himself from something true.</p>
+          <p class="tone-act-label">Acts III &ndash; IV</p>
+          <h4>Pressure</h4>
+          <p>Heat, thirst, mistakes with consequences, then a court where every kindness is a blade. The camera slows and starts to watch.</p>
         </div>
         <div class="tone-act">
-          <p class="tone-act-label">Act III</p>
-          <h4>Gravity Earned</h4>
-          <p>Gravitas earned through suffering. The manger scene must be shot in near-silence. The gifts must be given slowly. The audience must feel each one as a small death. Nothing explained. Nothing decorated.</p>
+          <p class="tone-act-label">Acts V &ndash; VI</p>
+          <h4>Stillness</h4>
+          <p>Silence that has weight. The action stops asking for attention and the film asks for the audience's instead.</p>
         </div>
       </div>
-    </div>
-  </div>
 
-  <!-- Theme Architecture -->
-  <div class="section-block" style="background: rgba(12,10,7,0.8); padding-top: 0;">
-    <div class="section-inner">
+      <div class="gold-rule"></div>
+
       <p class="section-label">Thematic Architecture</p>
-      <h2 class="section-heading">What This Film Is Actually About</h2>
+      <h2 class="section-heading">What the Film Is About</h2>
       <div class="theme-stack">
         <div class="theme-row">
-          <div class="theme-key">Primary Theme</div>
-          <div class="theme-val">The cost of keeping a promise across time. Not the romance of legacy — the weight of it. The three men are not heroes on a quest. They are people who have inherited an obligation they didn't ask for, in a world that has completely forgotten why it matters.</div>
+          <div class="theme-key">The Covenant</div>
+          <div class="theme-val">Six hundred years separate the furnace at Babylon from the star over the observatory. The film opens in the fire and travels the whole span with a single title card: <em>Their descendants are still keeping the fire.</em></div>
         </div>
         <div class="theme-row">
-          <div class="theme-key">The Gifts</div>
-          <div class="theme-val">Each gift is not treasure — it is the specific artifact of each man's old self, surrendered. Gold is Balthazar's identity, rank, and protection. Frankincense is Caspar's stolen future and every escape route he has left. Myrrh is Melchior's private claim on his own death. Given freely.</div>
+          <div class="theme-key">The Legacy</div>
+          <div class="theme-val">"Don't let the Legacy die on your watch." The line is a command, an inheritance and a burden, and every main character is measured against it.</div>
         </div>
         <div class="theme-row">
-          <div class="theme-key">The Furnace</div>
-          <div class="theme-val">The furnace from Daniel 3 is not backstory. It is the structural spine of the film. Every time these men face fire — literal or metaphorical — they are living out the same promise. The wagon IS the furnace. Jerusalem IS the furnace. Bethlehem is the moment the fire finally stops burning and becomes light.</div>
+          <div class="theme-key">What a Life Is Worth</div>
+          <div class="theme-val">Value is not what we gather for ourselves but the fire we keep burning for those who come after. Each lead begins the film holding something for himself.</div>
         </div>
         <div class="theme-row">
-          <div class="theme-key">The Fourth Figure</div>
-          <div class="theme-val">MANDATORY: The Fourth Figure seen in the furnace 600 years prior is NEVER clearly shown. Not in flashback. Not in the stable. Ambiguity is the theological and creative requirement. Any rendering that resolves this question has broken the film's central mystery.</div>
+          <div class="theme-key">Objects as Moral Architecture</div>
+          <div class="theme-val">A silver box, a bronze necklace, a golden bracelet. Each is carried, handled and lit consistently so the audience can read a character's choices without a word of dialogue.</div>
         </div>
         <div class="theme-row">
-          <div class="theme-key">What It Must Never Be</div>
-          <div class="theme-val">A church pageant in period costume. A film that explains its own themes in dialogue. Action sequences that exist independently of character cost. The word "wise" never spoken as a self-description.</div>
+          <div class="theme-key">Gifts as Surrendered Selves</div>
+          <div class="theme-val">Gold is Balthazar's identity and rank. Frankincense is Caspar's stolen future. Myrrh is Melchior's claim on his own ending. The three gifts are what each man has to give up.</div>
+        </div>
+        <div class="theme-row">
+          <div class="theme-key">Power vs. Service</div>
+          <div class="theme-val">Herod is a "New Nebuchadnezzar": still, controlled and soft-spoken. Zaneb argues from inside the same scrolls that "somebody's hands must set it up." The film asks who rules and who kneels.</div>
+        </div>
+        <div class="theme-row">
+          <div class="theme-key">The Unseen</div>
+          <div class="theme-val">The Fourth Figure from the furnace is only ever a silhouette, never a face, and is never explained. If it can be defined, it has been shown too clearly.</div>
         </div>
       </div>
-    </div>
-  </div>
 
-  <!-- Character Architecture -->
-  <div class="section-block">
-    <div class="section-inner">
+      <div class="gold-rule"></div>
+
       <p class="section-label">Character Architecture</p>
-      <h2 class="section-heading">Three Wounds. One Bloodline.</h2>
+      <h2 class="section-heading">The Principals</h2>
       <div class="char-deep-grid">
         <div class="char-deep-card">
-          <div class="char-deep-header">
-            <h3>Caspar</h3>
-            <span class="lineage-tag">Line of Abednego · The Heart</span>
-          </div>
+          <div class="char-deep-header"><h3>Caspar</h3><span class="lineage-tag">Line of Abednego &middot; 20s</span></div>
           <div class="char-deep-body">
-            <p>Enters the film in moral cowardice: he drops his mentor's scrolls into the fire to save the frankincense. He is fast, resourceful, and operating on pure survival instinct. His humor is a defense mechanism. His necklace — the Bronze of Abednego — was not stolen. It was taken in love and protection, a redefinition that took him the entire film to understand.</p>
-            <p>His arc is the reclamation of the word "guardian." He is not a thief who became something better. He was always the carrier. The journey is his proof.</p>
-            <div class="char-arc">Arc: Thief → Guardian <span>"Enter as a man running from fire. Leave as a man who walks through it."</span></div>
+            <p>A thief's frame, copper-red hair no hood quite hides, and the muscle memory of a man who learned to climb before he learned to walk. He reads exits first and valuables second. The nickname "Copper" comes from the man who raised him.</p>
+            <p>His physical language is the descent and the climb: up into rafters, down into wells. Every time he goes up for something, the film is quietly asking what he will do when he has to go down.</p>
+            <div class="char-arc">Arc<span>From running from fire, to becoming its guardian.</span></div>
           </div>
         </div>
         <div class="char-deep-card">
-          <div class="char-deep-header">
-            <h3>Balthazar</h3>
-            <span class="lineage-tag">Line of Meshach · The Mind</span>
-          </div>
+          <div class="char-deep-header"><h3>Balthazar</h3><span class="lineage-tag">Line of Meshach &middot; 30s</span></div>
           <div class="char-deep-body">
-            <p>A celebrity polymath who has mistaken acclaim for purpose. The Parthian Imperial Seal on his wrist is his identity, his protection, and his proof that he matters. He is not evil — he is a man who has never been asked to be brave. He always considered his birthmark a defect. Melchior calls it a signature.</p>
-            <p>His arc is the destruction of false status. When he breaks the lock of his imperial bracelet, the act is irreversible and devastating. He becomes a wanted man with no empire behind him — and completely free for the first time.</p>
-            <div class="char-arc">Arc: Prince of Status → Prince of Truth <span>"A king's offering from a man who just stopped being one."</span></div>
+            <p>A Parthian prince of the old Arsacid houses, with the stillness of a man who knows he is the cleverest person in any room. His armor is not just gaps. It has a door, and the film is about who is let through it.</p>
+            <p>He solves problems with brass instruments, glass spheres and arithmetic. The bracelet he wears is armor and a sentence at the same time.</p>
+            <div class="char-arc">Arc<span>From rank and certainty, to worth.</span></div>
           </div>
         </div>
         <div class="char-deep-card">
-          <div class="char-deep-header">
-            <h3>Melchior</h3>
-            <span class="lineage-tag">Line of Shadrach · The Soul</span>
-          </div>
+          <div class="char-deep-header"><h3>Melchior</h3><span class="lineage-tag">Line of Shadrach &middot; 60s</span></div>
           <div class="char-deep-body">
-            <p>Terminally ill. Last of the true Watchers. He has been the keeper of the Codex and the Daniel prophecies in a city no one cares about anymore. He hides his coughing fits. He packed burial spices as insurance. He is not going to Bethlehem to witness something. He is going to complete something — to be the hinge point between 600 years of waiting and whatever comes after.</p>
-            <p>His final instruction to Caspar is not comfort — it is commission. "Go east. Find the others who wait. The King is here, but the world is still dark."</p>
-            <div class="char-arc">Arc: Forgotten Elder → Bridge Between Worlds <span>"A prophet's offering from a man who finally accepts that his life was preparation, not waste."</span></div>
+            <p>Keeper of the Codex of the Watch. Grey, patient, hiding a cough from everyone and a plan from most. He measures the sky for a living and has just seen it move.</p>
+            <p>His grief is quiet and unmanaged: he has taught a mountain full of other people's children and never had a family of his own. He is the film's moral center.</p>
+            <div class="char-arc">Arc<span>From waiting, to arriving.</span></div>
           </div>
         </div>
         <div class="char-deep-card">
-          <div class="char-deep-header">
-            <h3>Herod</h3>
-            <span class="lineage-tag">The New Nebuchadnezzar · The Mirror</span>
-          </div>
+          <div class="char-deep-header"><h3>Zaneb</h3><span class="lineage-tag">The Dark Order &middot; 40s</span></div>
           <div class="char-deep-body">
-            <p>The structural mirror of the film's opening. Nebuchadnezzar demanded worship or the furnace. Herod demands service or disappearance. He is not a villain who monologues. He is a man of total stillness whose danger is measured in what he doesn't say.</p>
-            <p>His two most powerful moments: first, when he watches the Magi leave his court still wearing his colors — power as stillness, eyes half in shadow, face settling into a terrifying, polite calm. Zaneb is not in that room; Herod's menace needs no blood at the throne base. Second, when only his eyes remain visible in the throne room shadow. He should be played as a man who was once capable of something better, and knows it.</p>
-            <div class="char-arc">Function: The Pharaoh Parallel <span>"The same fire. The same demand. The same refusal. Different furnace."</span></div>
+            <p>A fallen Magus who has read the same scrolls as the others and found a different command in them. Unarmored, unhurried and horribly patient, he reads a street the way other men read a letter.</p>
+            <p>He is never a cartoon. His father died waiting for the sign and he has decided not to. He wears the same three-flame sigil as the heroes, worked upside down.</p>
+            <div class="char-arc">Function<span>The mirror. Same fire, opposite hands.</span></div>
+          </div>
+        </div>
+        <div class="char-deep-card">
+          <div class="char-deep-header"><h3>Herod</h3><span class="lineage-tag">King of Judea &middot; late 60s</span></div>
+          <div class="char-deep-body">
+            <p>Sits bolt upright, never fidgets, never fills silence. He is old, ill and dangerous, and he is most frightening when he is being generous. His softest line is his sharpest.</p>
+            <p>Played as a still, dry-voiced administrator of fear, he never raises his voice. Zaneb is not in that room, which is the point.</p>
+            <div class="char-arc">Function<span>The new Nebuchadnezzar.</span></div>
+          </div>
+        </div>
+        <div class="char-deep-card">
+          <div class="char-deep-header"><h3>Eli</h3><span class="lineage-tag">Junior Copyist &middot; 20s</span></div>
+          <div class="char-deep-body">
+            <p>A junior scribe in Herod's court with carbon ink on his fingertips. He writes down what kings say and is never once asked what he thinks.</p>
+            <p>Eli is mandatory. The film's quietest question runs through him, and the production should protect his scenes in every cut.</p>
+            <div class="char-arc">Function<span>The witness the empire never counted.</span></div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
 
-  <!-- The Mandatory Scene — Eli -->
-  <div class="section-block" style="background: rgba(10,8,5,0.9); padding-top: 0;">
-    <div class="section-inner">
       <div class="mandatory-scene">
-        <p class="label">Mandatory · Non-Negotiable · The Film's Moral Argument Complete</p>
-        <h3>The Single Most Important Image: Eli</h3>
-        <p>In the throne room, in the far corner, a young court scribe sits at a low table. His pen moves across the scroll. Melchior speaks. The pen stops. One tear falls onto the parchment. The ink blooms. He does not wipe it away. No one in the room sees him. We do.</p>
-        <p>Eli is the answer to the question the entire film is asking. He is who the fire was kept for. He is also the next keeper. Three seconds of screen time. No dialogue. The film's thematic argument, complete and irreducible.</p>
-        <p>He appears again in the film's final scene: writing by lamplight. The pen moving. The fire kept.</p>
-        <div class="quote-block" style="margin-top: 2rem; background: transparent; border-left-color: var(--crimson);">
-          <blockquote style="font-size: 1.1rem; color: var(--crimson-glow);">Eli is mandatory, not optional. His removal would not be a directorial choice — it would be the removal of the film's reason for existing.</blockquote>
-        </div>
+        <p class="label">Mandatory</p>
+        <h3>The Scribe in the Room</h3>
+        <p>In Herod's audience chamber, a junior copyist sits at the edge of the room recording tax lines, names and dates. When one of the travellers says something that was not meant for the record, his reed slows. The page, and the camera, must stay with him.</p>
+        <p>This is the film's smallest and most important choice. A rule for the edit: whenever a king speaks, Eli is somewhere in frame with ink on his fingers.</p>
       </div>
-    </div>
-  </div>
 
-  <!-- Visual Language -->
-  <div class="section-block">
-    <div class="section-inner">
-      <p class="section-label">Visual Language</p>
-      <h2 class="section-heading">The World in Color</h2>
+      <div class="gold-rule"></div>
+
+      <p class="section-label">Objects</p>
+      <h2 class="section-heading">The Props That Carry the Plot</h2>
       <div class="theme-stack">
-        <div class="theme-row">
-          <div class="theme-key">Ctesiphon</div>
-          <div class="theme-val">Ash and fire. Blue chemical flame. Deep shadow with orange ember light. The world of Act 1 is beautiful and burning. Lens: wide, slightly unstable. Frame rate: 25fps with selective overcranking on moments of destruction.</div>
-        </div>
-        <div class="theme-row">
-          <div class="theme-key">The Desert</div>
-          <div class="theme-val">Gold and bone. Bleached white sky at midday, amber at dusk. The wagon is warm but confined. The exterior is hostile and immense. The contrast between inside (intimate, warm, human) and outside (vast, silent, indifferent) is the visual spine of Act 2.</div>
-        </div>
-        <div class="theme-row">
-          <div class="theme-key">Jerusalem</div>
-          <div class="theme-val">Marble, blood, Tyrian purple. Cold. Herod's court should feel like the inside of a trap that hasn't been sprung yet. Every gold surface reflects something ugly. The robes they are draped in — deep crimson and gold — are both magnificent and suffocating.</div>
-        </div>
-        <div class="theme-row">
-          <div class="theme-key">Bethlehem</div>
-          <div class="theme-val">Silence and sapphire. The stable cave is the visual opposite of everything before it. The Star's light is not warm — it is cool, clear, piercing. The flames in the space do not flicker. The animals are still. The noise of the world is absent. This is not relief. It is arrival.</div>
-        </div>
-        <div class="theme-row">
-          <div class="theme-key">Restraint Rule</div>
-          <div class="theme-val">The film earns its spectacle through prior restraint. Every VFX moment — the Star, the Fourth Figure, the furnace — must be preceded by visual economy. The audience must feel the cost of what they are about to see before they see it.</div>
-        </div>
+        <div class="theme-row"><div class="theme-key">Frankincense Box</div><div class="theme-val">Silver-bound, sealed with old wax, "heavier than it looks." Its wear, its weight and its hinges must stay consistent from shot to shot.</div></div>
+        <div class="theme-row"><div class="theme-key">Abednego Necklace</div><div class="theme-val">A plain bronze disc on a worn cord, etched with a three-flame sigil. Generations of necks that refused to bow have worn it smooth.</div></div>
+        <div class="theme-row"><div class="theme-key">Parthian Gold Bracelet</div><div class="theme-val">The device of the King of Kings, fastened with a hinged clasp and pin. "Seal, sentence and passport."</div></div>
+        <div class="theme-row"><div class="theme-key">Myrrh Jar</div><div class="theme-val">Burial spice, packed by a man who has no plans to need it.</div></div>
+        <div class="theme-row"><div class="theme-key">Codex of the Watch</div><div class="theme-val">Hinged cedar tablets bound with leather through bronze eyes. Three columns of names, one for each line. A tally of the years the watch was kept.</div></div>
+        <div class="theme-row"><div class="theme-key">Star-Table &amp; Sighting Tube</div><div class="theme-val">Balthazar's brass certainties: the instruments he trusts more than any person.</div></div>
       </div>
+
+      <div class="gold-rule"></div>
+
+      <p class="section-label">Visual Language</p>
+      <h2 class="section-heading">A Palette for Every Place</h2>
+      <div class="theme-stack">
+        <div class="theme-row"><div class="theme-key">Babylon</div><div class="theme-val">White-hot, roaring, impossible calm at the center of the fire. The Fourth Figure is a silhouette and never a face.</div></div>
+        <div class="theme-row"><div class="theme-key">Hazar-Enan</div><div class="theme-val">Hard morning light, dust in the shafts, ash and soot. Mud-brick shadow and pitch-torch smoke.</div></div>
+        <div class="theme-row"><div class="theme-key">Ctesiphon</div><div class="theme-val">Plum silk, cedar oil, glazed brick and bronze. An expensive silence, and a power that has never asked Rome's permission.</div></div>
+        <div class="theme-row"><div class="theme-key">Senir</div><div class="theme-val">Thin air, woodsmoke, chalk and snow on the shoulder of Mount Hermon.</div></div>
+        <div class="theme-row"><div class="theme-key">The Road</div><div class="theme-val">Black lava country, bone-white salt, indigo night and horizontal sand. The sapphire Star is always slightly ahead of them.</div></div>
+        <div class="theme-row"><div class="theme-key">Jerusalem</div><div class="theme-val">Pale gold stone, Tyrian purple and crimson, lamplight on rings. Everything is beautiful and nothing is free.</div></div>
+        <div class="theme-row"><div class="theme-key">Bethlehem</div><div class="theme-val">Silence and sapphire. A single oil lamp, whitewashed walls, and a hush that has weight.</div></div>
+      </div>
+
+      <div class="gold-rule"></div>
+
+      <p class="section-label">Set Pieces</p>
+      <h2 class="section-heading">The Big Moments</h2>
+      <div class="scene-grid">
+        <div class="scene-card"><h3>The Furnace</h3><p>The cold open. White-hot and wordless, with the world's most patient silhouette.</p></div>
+        <div class="scene-card"><h3>The Rooftop Run</h3><p>Hazar-Enan at night, a thief reading the negative space between buildings while a patient hunter walks the street below.</p></div>
+        <div class="scene-card"><h3>The Tent and the River</h3><p>Naphtha, sulphur smoke and black water in a single escape.</p></div>
+        <div class="scene-card"><h3>The Well</h3><p>A descent into the dark to fix something that is broken, and a village that decides what to do with a stranger.</p></div>
+        <div class="scene-card"><h3>The Storm</h3><p>A white wall of salt and bone-dust, three men in a cave, one flame.</p></div>
+        <div class="scene-card"><h3>The Hunt</h3><p>Sheep, hounds and a king's colors. A chase that is won by smell and lost by pride.</p></div>
+      </div>
+
     </div>
   </div>
-
 </section>
 
 <!-- ============================================================
-     SECTION 3: THE STUDIO / PRODUCER
+     SECTION 3: THE STUDIO — SPOILER-FREE
 ============================================================ -->
 <section class="page-section" id="section-studio">
 
   <div class="studio-hero">
     <div class="studio-hero-inner">
-      <span class="confidential-badge">Production Finance Brief · Confidential</span>
+      <span class="confidential-badge">Confidential &middot; Finance Brief</span>
       <h1>The Wise Men: Journey of the Star</h1>
-      <p class="sub">Investment Case · Cast · Locations · Audience Analysis · Comparable Performance</p>
-      <p style="font-size: 1rem; color: var(--ivory-dim); max-width: 750px; margin-top: 1rem; line-height: 1.7;">An historical epic. A generational covenant. A survival thriller with four-quadrant reach and a proven comparable market. WGA registered. 115 pages feature draft completed. Director target identified. Cast vision (targets — not attached).</p>
-    </div>
-  </div>
+      <p class="sub">Historical Action Epic &middot; 109-Page Feature Draft &middot; WGA Registered</p>
+      <p class="text-body" style="max-width:800px;">A four-quadrant theatrical release built on a premise audiences already hold in their hearts, told as a survival epic they have never seen. Faith, action-adventure, history and character drama in a single film.</p>
 
-  <!-- Headline Numbers -->
-  <div class="section-block">
-    <div class="section-inner">
       <div class="headline-numbers">
         <div class="headline-num">
-          <p class="num">$95–120M</p>
-          <p class="num-label">Total Production Budget</p>
-          <p class="num-sub">All-in before incentives</p>
+          <div class="num">$95&ndash;120M</div>
+          <div class="num-label">Total Production</div>
+          <div class="num-sub">before incentives</div>
         </div>
         <div class="headline-num">
-          <p class="num">$15–24M</p>
-          <p class="num-label">Projected Tax Rebates</p>
-          <p class="num-sub">Jordan · Morocco · Malta · UK</p>
+          <div class="num">$15&ndash;24M</div>
+          <div class="num-label">Projected Rebates</div>
+          <div class="num-sub">Jordan &middot; Morocco &middot; Malta &middot; UK</div>
         </div>
         <div class="headline-num">
-          <p class="num">$75–100M</p>
-          <p class="num-label">Effective Cash Ask</p>
-          <p class="num-sub">Net of rebates, financed</p>
+          <div class="num">$75&ndash;100M</div>
+          <div class="num-label">Effective Cash Ask</div>
+          <div class="num-sub">after rebates</div>
         </div>
       </div>
-
-      <!-- Budget Breakdown -->
-      <p class="section-label" style="margin-top: 3rem;">Budget Architecture</p>
-      <h2 class="section-heading" style="margin-bottom: 2rem;">Where the Money Goes</h2>
-      <div class="budget-bars">
-        <div class="budget-bar-row">
-          <span class="budget-bar-label">Above the Line</span>
-          <div class="budget-bar-track"><div class="budget-bar-fill" style="width: 32%"></div></div>
-          <span class="budget-bar-value">$28–38M</span>
-        </div>
-        <div class="budget-bar-row">
-          <span class="budget-bar-label">Production</span>
-          <div class="budget-bar-track"><div class="budget-bar-fill" style="width: 46%"></div></div>
-          <span class="budget-bar-value">$45–55M</span>
-        </div>
-        <div class="budget-bar-row">
-          <span class="budget-bar-label">Post-Production</span>
-          <div class="budget-bar-track"><div class="budget-bar-fill" style="width: 20%"></div></div>
-          <span class="budget-bar-value">$18–22M</span>
-        </div>
-        <div class="budget-bar-row">
-          <span class="budget-bar-label">Contingency</span>
-          <div class="budget-bar-track"><div class="budget-bar-fill" style="width: 10%"></div></div>
-          <span class="budget-bar-value">$8–10M</span>
-        </div>
-      </div>
-      <p class="text-body" style="margin-top: 1rem; font-size: 0.85rem; color: var(--ivory-dim);">Above-the-line breakdown: Director (target: Fuqua market rate $8–12M) · 3 Leads ($10–14M) · Producing Fees ($4–6M) · Script &amp; Rights (negotiated; production ATL placeholder — not a naked-script asking price) ($2–4M). Three-lead ensemble structure distributes talent cost without losing marquee value. Act 2 is a character-driven wagon film — concentrating big spend on Act 1 and Act 3 bookends only.</p>
     </div>
   </div>
 
-  <div class="gold-rule"></div>
-
-  <!-- Cast Vision -->
-  <div class="section-block" style="padding-top: 0;">
+  <div class="section-block">
     <div class="section-inner">
-      <p class="section-label">Principal Cast Vision</p>
-      <h2 class="section-heading">The Ensemble</h2>
-      <p style="font-size: 0.8rem; color: var(--ivory-dim); margin: -0.5rem 0 1.5rem; letter-spacing: 0.04em;">Talent and director names are targets for packaging — not confirmed attachments.</p>
+
+      <p class="section-label">Budget</p>
+      <h2 class="section-heading">Where the Money Goes</h2>
+      <div class="budget-bars">
+        <div class="budget-bar-row"><span class="budget-bar-label">Above the Line</span><div class="budget-bar-track"><div class="budget-bar-fill" style="width:32%"></div></div><span class="budget-bar-value">$28&ndash;38M</span></div>
+        <div class="budget-bar-row"><span class="budget-bar-label">Production</span><div class="budget-bar-track"><div class="budget-bar-fill" style="width:46%"></div></div><span class="budget-bar-value">$45&ndash;55M</span></div>
+        <div class="budget-bar-row"><span class="budget-bar-label">Post-Production</span><div class="budget-bar-track"><div class="budget-bar-fill" style="width:19%"></div></div><span class="budget-bar-value">$18&ndash;22M</span></div>
+        <div class="budget-bar-row"><span class="budget-bar-label">Contingency</span><div class="budget-bar-track"><div class="budget-bar-fill" style="width:8%"></div></div><span class="budget-bar-value">$8&ndash;10M</span></div>
+      </div>
+      <p class="text-body">The set-piece list in the script (a furnace, a burning observatory, a tent-fire and river escape, a sandstorm cave, crowd and cavalry action, hounds, and a great deal of livestock) is the reason for the production line.</p>
+
+      <div class="gold-rule"></div>
+
+      <p class="section-label">Cast</p>
+      <h2 class="section-heading">Targets by Role</h2>
+      <p class="text-body">Targets only. No cast member is attached or has been approached.</p>
       <div class="cast-grid">
         <div class="cast-card">
-          <p class="cast-role">The Rogue · Lineage of Abednego</p>
-          <p class="cast-char">Caspar</p>
+          <p class="cast-role">Lead</p>
+          <h3 class="cast-char">Caspar</h3>
           <p class="cast-actor">Dev Patel</p>
-          <p class="cast-fee">Projected fee: $3–5M</p>
-          <p class="cast-note">Proven global box office reach. Physical credibility (Monkey Man). Demonstrated emotional range in prestige drama (The Personal History of David Copperfield). Appeals to both faith and action demographic. International draw in UK, India, and North America simultaneously.</p>
+          <p class="cast-note">The thief. Physical, funny and the film's heart.</p>
         </div>
         <div class="cast-card">
-          <p class="cast-role">The Prince · Lineage of Meshach</p>
-          <p class="cast-char">Balthazar</p>
+          <p class="cast-role">Lead</p>
+          <h3 class="cast-char">Balthazar</h3>
           <p class="cast-actor">Riz Ahmed</p>
-          <p class="cast-fee">Projected fee: $4–6M</p>
-          <p class="cast-note">Oscar-winning credibility (Sound of Metal). Marquee pairing with Patel creates a distinctive, internationally marketable ensemble. Multi-faith audience crossover appeal. Established dramatic range for an arc requiring arrogance that earns its humbling. Critics and awards-season presence.</p>
+          <p class="cast-note">The prince. Precise, proud and quietly broken.</p>
         </div>
         <div class="cast-card">
-          <p class="cast-role">The Elder · Lineage of Shadrach</p>
-          <p class="cast-char">Melchior</p>
+          <p class="cast-role">Lead</p>
+          <h3 class="cast-char">Melchior</h3>
           <p class="cast-actor">Navid Negahban</p>
-          <p class="cast-fee">Projected fee: $1–2M</p>
-          <p class="cast-note">Prestige anchor performance at a fraction of comparable Western actor cost. Authentic cultural credibility for the Persian/Magi heritage. Proven gravitas in international productions (Homeland, Legion). His cost efficiency creates structural budget headroom for production scale.</p>
+          <p class="cast-note">The keeper. Gravitas that has to be earned by silence.</p>
+        </div>
+        <div class="cast-card">
+          <p class="cast-role">Antagonist</p>
+          <h3 class="cast-char">Zaneb</h3>
+          <p class="cast-actor">To be cast</p>
+          <p class="cast-note">Patient, physical, never a cartoon.</p>
+        </div>
+        <div class="cast-card">
+          <p class="cast-role">Antagonist</p>
+          <h3 class="cast-char">Herod</h3>
+          <p class="cast-actor">To be cast</p>
+          <p class="cast-note">A still, dry-voiced "New Nebuchadnezzar."</p>
+        </div>
+        <div class="cast-card">
+          <p class="cast-role">Supporting</p>
+          <h3 class="cast-char">Eli</h3>
+          <p class="cast-actor">To be cast</p>
+          <p class="cast-note">The junior copyist. Small role, large weight.</p>
         </div>
       </div>
-      <p class="text-body" style="margin-top: 1rem; font-size: 0.85rem; color: var(--ivory-dim);">Supporting cast budget: $1–2M. Includes: Herod (character actor — needs physical stillness and vocal control over theatrical menace), Zaneb (the fallen Magi antagonist), Roman Centurion Lucan, and Eli (the young scribe — the film's final emotional instrument).</p>
-    </div>
-  </div>
+      <p class="text-body">A supporting-cast budget of $1&ndash;2M covers the antagonists and Eli, with a wider ensemble of court, village and household roles, including several child and teen parts, still to be cast.</p>
 
-  <div class="gold-rule"></div>
+      <div class="gold-rule"></div>
 
-  <!-- Locations -->
-  <div class="section-block" style="padding-top: 0;">
-    <div class="section-inner">
-      <p class="section-label">Production Locations</p>
-      <h2 class="section-heading">The Multi-Country Footprint</h2>
-      <p class="text-body" style="margin-bottom: 2rem;">70–80 day shoot across four primary territories. Jordan as primary captures the widest range of location needs in a single-country footprint. Schedule discipline: front-load Jordan in optimal weather window (Oct–Nov). Animal sequences in dedicated blocks, never mixed with action or effects days.</p>
+      <p class="section-label">Locations</p>
+      <h2 class="section-heading">A 70&ndash;80 Day Shoot</h2>
       <div class="location-map">
         <div class="location-card">
           <div class="location-flag">JO</div>
-          <div>
-            <p class="location-name">Jordan — Primary Territory</p>
-            <p class="location-specifics">Petra (ancient city sequences, $500K–1.5M access) · Wadi Rum (desert expanse, chase sequences) · Royal Film Commission co-production framework. Widest range of location needs in single-country footprint.</p>
-            <span class="location-rebate">Tax Rebate: 10–15% · Est. $4–6M</span>
-          </div>
+          <div><p class="location-name">Jordan &middot; Petra &amp; Wadi Rum</p><p class="location-specifics">Desert ruin, salt country, the approach to the Dead Sea and the long canyon road. Primary contact: Royal Film Commission of Jordan.</p><span class="location-rebate">Rebate market</span></div>
         </div>
         <div class="location-card">
           <div class="location-flag">MA</div>
-          <div>
-            <p class="location-name">Morocco — Secondary Territory</p>
-            <p class="location-specifics">CCM Ouarzazate · Atlas Studios (established infrastructure) · Erg Chebbi dunes. Handles all Ctesiphon/ancient city and large-scale dune work.</p>
-            <span class="location-rebate">Tax Rebate: 20–30% · Est. $5–8M</span>
-          </div>
+          <div><p class="location-name">Morocco &middot; Ouarzazate, Atlas Studios, Erg Chebbi</p><p class="location-specifics">Damascus streets, caravan roads, dunes, the sandstorm.</p><span class="location-rebate">Rebate market</span></div>
         </div>
         <div class="location-card">
           <div class="location-flag">MT</div>
-          <div>
-            <p class="location-name">Malta — Gate &amp; Wall Sequences</p>
-            <p class="location-specifics">Fort Ricasoli (Jerusalem gate and portcullis sequences). Highest rebate rate in region. Isolated unit — can be captured in 5–7 days with stripped crew.</p>
-            <span class="location-rebate">Tax Rebate: 40% · Est. $2–4M</span>
-          </div>
+          <div><p class="location-name">Malta &middot; Fort Ricasoli</p><p class="location-specifics">Jerusalem's western gate and the walls of Herod's city.</p><span class="location-rebate">Rebate market</span></div>
         </div>
         <div class="location-card">
           <div class="location-flag">UK</div>
-          <div>
-            <p class="location-name">United Kingdom — Stage Builds</p>
-            <p class="location-specifics">Pinewood Studios · Throne room + cave interior (film's two most emotionally critical sequences) · Observatory build · Post-production qualifying spend. BFI Film Tax Relief eligible.</p>
-            <span class="location-rebate">Tax Rebate: 25% · Est. $4–6M</span>
-          </div>
+          <div><p class="location-name">United Kingdom &middot; Pinewood Studios</p><p class="location-specifics">Herod's throne room, cave interiors, the observatory and the furnace builds. (Cinecittà is the alternate stage facility.)</p><span class="location-rebate">Rebate market</span></div>
+        </div>
+        <div class="location-card">
+          <div class="location-flag">TR</div>
+          <div><p class="location-name">Turkey &middot; Cappadocia</p><p class="location-specifics">A small unit for the terraced hillside village, the stone house and the olive groves of Bethlehem.</p><span class="location-rebate">Small unit</span></div>
         </div>
       </div>
-      <p class="text-body" style="font-size: 0.85rem; color: var(--ivory-dim);">Additional: Cappadocia, Turkey (stable sequence — small dedicated unit). The Volume / LED stage planned for Herod dream sequence and select night VFX sequences. Estimated saving vs. full location/practical approach: $3–5M. First production contact: Royal Film Commission of Jordan.</p>
-    </div>
-  </div>
 
-  <div class="gold-rule"></div>
+      <div class="gold-rule"></div>
 
-  <!-- Audience Analysis -->
-  <div class="section-block" style="padding-top: 0;">
-    <div class="section-inner">
-      <p class="section-label">Audience Analysis</p>
-      <h2 class="section-heading">The Four-Quadrant Reach</h2>
+      <p class="section-label">Audience</p>
+      <h2 class="section-heading">Four Quadrants, One Film</h2>
       <div class="audience-grid">
-        <div class="audience-cell">
-          <p class="audience-pct">Q1</p>
-          <p class="audience-label">Faith Audience</p>
-          <p class="audience-desc">The Chosen (S1–S4) generated $1B+ crowdfunded on $10M/season. The Passion of the Christ ($30M → $612M) proved the ceiling. This audience is actively underserved at the theatrical premium tier.</p>
-        </div>
-        <div class="audience-cell">
-          <p class="audience-pct">Q2</p>
-          <p class="audience-label">Action / Epic</p>
-          <p class="audience-desc">Kingdom of Heaven, Gladiator, Raiders of the Lost Ark. No direct competitor in this space. A prestige historical action film with this cast has no current rival in development.</p>
-        </div>
-        <div class="audience-cell">
-          <p class="audience-pct">Q3</p>
-          <p class="audience-label">History / Drama</p>
-          <p class="audience-desc">Awards-season prestige audience activated by Fuqua as target director and a Patel/Ahmed vision pairing. Potential major awards contender in technical and performance categories.</p>
-        </div>
-        <div class="audience-cell">
-          <p class="audience-pct">Q4</p>
-          <p class="audience-label">International</p>
-          <p class="audience-desc">Latin America, Sub-Saharan Africa, South Korea, Philippines — undercounted faith-audience upside. UK, India, Middle East — cast-driven pull. The biblical setting has no cultural ceiling.</p>
-        </div>
+        <div class="audience-cell"><p class="audience-label">Faith</p><p class="audience-desc">The Passion of the Christ ($30M to $612M) and The Chosen prove a hungry, organized audience.</p></div>
+        <div class="audience-cell"><p class="audience-label">Action-Adventure</p><p class="audience-desc">Gladiator ($103M to $460M): propulsive set pieces with a moral spine.</p></div>
+        <div class="audience-cell"><p class="audience-label">History</p><p class="audience-desc">Kingdom of Heaven: ancient-world scale and production value that plays in every territory.</p></div>
+        <div class="audience-cell"><p class="audience-label">Character Drama</p><p class="audience-desc">Three leads, three arcs, and a cast that rewards actors and awards campaigns.</p></div>
       </div>
-    </div>
-  </div>
 
-  <!-- Comparable Films -->
-  <div class="section-block" style="background: rgba(12,10,7,0.8); padding-top: 0;">
-    <div class="section-inner">
-      <p class="section-label">Market Comparables</p>
-      <h2 class="section-heading">The DNA &amp; The Proof of Concept</h2>
+      <div class="gold-rule"></div>
+
+      <p class="section-label">Comparables</p>
+      <h2 class="section-heading">The Market Has Already Spoken</h2>
       <table class="comp-table">
-        <thead>
-          <tr>
-            <th>Title</th>
-            <th>Budget</th>
-            <th>W/W Gross</th>
-            <th>Relevance</th>
-          </tr>
-        </thead>
+        <thead><tr><th>Title</th><th>Budget</th><th>Worldwide</th><th>What it proves</th></tr></thead>
         <tbody>
-          <tr>
-            <td class="highlight">Kingdom of Heaven (DC)</td>
-            <td>$130M</td>
-            <td class="positive">$211M</td>
-            <td>Closest tonal comp. Historical epic, faith themes, desert scale. Director's Cut validated the market's appetite for a longer, deeper version of this story.</td>
-          </tr>
-          <tr>
-            <td class="highlight">Gladiator</td>
-            <td>$103M</td>
-            <td class="positive">$460M</td>
-            <td>Fuqua anchor comp. Proves ancient-world epic with morally complex lead and prestige director can cross $400M. Comparable budget, comparable risk profile, superior result.</td>
-          </tr>
-          <tr>
-            <td class="highlight">The Passion of the Christ</td>
-            <td>$30M</td>
-            <td class="positive">$612M</td>
-            <td>Faith audience ceiling proof. The market's scale when the faith quadrant is genuinely activated at the marketing level. Our film sits at 3× the budget but targets a wider four-quadrant audience.</td>
-          </tr>
-          <tr>
-            <td class="highlight">Exodus: Gods &amp; Kings</td>
-            <td>$140M</td>
-            <td>$268M</td>
-            <td>Demonstrates the budget ceiling for biblical epic without sufficient faith-audience activation. We sit below this risk zone. The lesson: cast authenticity and faith-community outreach are non-negotiable.</td>
-          </tr>
-          <tr>
-            <td class="highlight">Silence (Scorsese)</td>
-            <td>$46M</td>
-            <td class="negative">$7M</td>
-            <td class="counter">The counter-example. Faith-themed, prestige director, no action genre — grossly underperformed. Our film explicitly avoids this trap: every faith beat is embedded in physical, earned narrative consequence.</td>
-          </tr>
-          <tr>
-            <td class="highlight">The Chosen (S1–S4)</td>
-            <td>$10M/season</td>
-            <td class="positive">$1B+ crowdfunded</td>
-            <td>Proves the scale and intensity of the underserved faith market at the premium end. Our film converts this audience to theatrical, multiplying per-viewer revenue significantly.</td>
-          </tr>
+          <tr><td class="highlight">The Passion of the Christ</td><td>$30M</td><td class="positive">$612M</td><td>Faith audiences turn out in force.</td></tr>
+          <tr><td class="highlight">Gladiator</td><td>$103M</td><td class="positive">$460M</td><td>Ancient-world epics can be both prestige and blockbuster.</td></tr>
+          <tr><td class="highlight">Exodus: Gods &amp; Kings</td><td>$140M</td><td>$268M</td><td>Scale alone is not enough. Story and character have to carry it.</td></tr>
+          <tr><td class="highlight">Kingdom of Heaven (Director's Cut)</td><td>$130M</td><td>$211M</td><td>A thoughtful epic can find its audience after release.</td></tr>
+          <tr><td class="highlight">Silence</td><td>$46M</td><td class="negative">$7M</td><td>A cautionary comp: faith without propulsion limits reach.</td></tr>
+          <tr><td class="highlight">The Chosen (S1&ndash;S4)</td><td>$10M / season</td><td class="positive">$1B+ crowdfunded</td><td>An engaged audience can fund its own story.</td></tr>
         </tbody>
       </table>
-    </div>
-  </div>
+      <p class="text-body">The Wise Men is positioned to take the faith audience of <em>The Passion</em>, the propulsion of <em>Gladiator</em> and the production discipline that <em>Exodus</em> lacked.</p>
 
-  <!-- Revenue / Distribution -->
-  <div class="section-block" style="padding-top: 0;">
-    <div class="section-inner">
-      <p class="section-label">Revenue &amp; Distribution</p>
-      <h2 class="section-heading">The Break-Even Math &amp; The Upside</h2>
+      <div class="gold-rule"></div>
+
+      <p class="section-label">Projected Returns</p>
+      <h2 class="section-heading">Revenue Scenarios</h2>
       <div class="revenue-grid">
         <div class="revenue-card">
-          <h4>Theatrical Targets</h4>
-          <div class="revenue-item"><span class="label">Break-Even (2.5× P&A threshold)</span><span class="value">$250M</span></div>
-          <div class="revenue-item"><span class="label">Conservative target</span><span class="value">$200–280M</span></div>
-          <div class="revenue-item"><span class="label">Optimistic target</span><span class="value">$350M+</span></div>
-          <div class="revenue-item"><span class="label">Faith-activated ceiling (Passion comp)</span><span class="value">$600M+</span></div>
+          <h4>Worldwide Box Office</h4>
+          <div class="revenue-item"><span class="label">Break-even</span><span class="value">$250M</span></div>
+          <div class="revenue-item"><span class="label">Conservative</span><span class="value">$200&ndash;280M</span></div>
+          <div class="revenue-item"><span class="label">Optimistic</span><span class="value">$350M+</span></div>
+          <div class="revenue-item"><span class="label">Faith-activated ceiling</span><span class="value">$600M+</span></div>
         </div>
         <div class="revenue-card">
-          <h4>Ancillary Revenue</h4>
-          <div class="revenue-item"><span class="label">Streaming rights floor (Netflix/Apple/Amazon)</span><span class="value">$30–50M</span></div>
-          <div class="revenue-item"><span class="label">Home video / PVOD</span><span class="value">$15–25M</span></div>
-          <div class="revenue-item"><span class="label">International pre-sales</span><span class="value">$20–35M</span></div>
-          <div class="revenue-item"><span class="label">Educational / faith community licensing</span><span class="value">$5–10M</span></div>
+          <h4>Ancillary Estimates</h4>
+          <div class="revenue-item"><span class="label">Streaming (floor)</span><span class="value">$30&ndash;50M</span></div>
+          <div class="revenue-item"><span class="label">Home video / PVOD</span><span class="value">$15&ndash;25M</span></div>
+          <div class="revenue-item"><span class="label">International pre-sales</span><span class="value">$20&ndash;35M</span></div>
+          <div class="revenue-item"><span class="label">Educational licensing</span><span class="value">$5&ndash;10M</span></div>
         </div>
       </div>
-      <p class="text-body" style="font-size: 0.9rem; margin-top: 1rem; color: var(--ivory-dim);">Kingdom of Heaven (nearest comp) grossed $211M on $130M — at a worse market moment, with less faith-audience intentional marketing. The Passion demonstrates $600M+ is achievable when the faith quadrant is genuinely activated. Streaming rights at this cast level represent a $30–50M floor <em>independent</em> of theatrical performance — de-risking the investment floor significantly.</p>
 
-      <div style="margin-top: 3rem;">
-        <p class="section-label">Distribution Strategy</p>
-        <h2 class="section-heading" style="margin-bottom: 2rem;">Three-Window Approach</h2>
-        <div class="dist-grid">
-          <div class="dist-card">
-            <p class="dist-phase">Window 1</p>
-            <p class="dist-title">Theatrical — Preferred Windows</p>
-            <p class="dist-desc">Preferred: Lent/Easter corridor or early fall — hunt-first, furnace-first positioning, not a Christmas-cozy Magi default. Q4 remains an option only with marketing control that leads on survival thriller and covenant stakes rather than holiday comfort. Wide release ambition: 3,500+ screens North America. Simultaneous international rollout prioritizing Latin America, UK, Philippines, South Korea.</p>
-          </div>
-          <div class="dist-card">
-            <p class="dist-phase">Window 2</p>
-            <p class="dist-title">Streaming — 90-Day Window</p>
-            <p class="dist-desc">Netflix, Apple TV+, or Amazon Prime as preferred partners at this cast/budget level representing a $30–50M floor. Faith-oriented streaming platforms (Pure Flix, Angel Studios) as secondary licensing for long-tail faith community engagement. PVOD premium window opens at day 45.</p>
-          </div>
-          <div class="dist-card">
-            <p class="dist-phase">Window 3</p>
-            <p class="dist-title">Franchise &amp; Ancillary</p>
-            <p class="dist-desc">The Order of the Magi universe concept creates sequel/prequel infrastructure. Educational tie-ins with religious education networks globally. Museum exhibit partnerships (astronomy, ancient history). A multi-season streaming spin-off exploring the Order's legacy following the first film is development-ready at greenlight.</p>
-          </div>
-        </div>
+      <div class="gold-rule"></div>
+
+      <p class="section-label">Distribution</p>
+      <h2 class="section-heading">How It Reaches an Audience</h2>
+      <div class="dist-grid">
+        <div class="dist-card"><p class="dist-phase">Phase 1</p><p class="dist-title">Faith-Community Activation</p><p class="dist-desc">Pastors, church partners and early-access screenings, in the way The Chosen built its audience.</p></div>
+        <div class="dist-card"><p class="dist-phase">Phase 2</p><p class="dist-title">Wide Theatrical</p><p class="dist-desc">A major theatrical release backed by international pre-sales.</p></div>
+        <div class="dist-card"><p class="dist-phase">Phase 3</p><p class="dist-title">PVOD &amp; Streaming</p><p class="dist-desc">Long-tail windows, plus educational licensing for churches and schools.</p></div>
       </div>
-    </div>
-  </div>
+      <p class="text-body">Initial outreach is to faith-forward studios and producers: Lionsgate, Kingdom Story Company and Pure Flix. A Fuqua attachment is the key that unlocks the rest.</p>
 
-  <!-- Investment Case -->
-  <div class="section-block" style="padding-top: 0;">
-    <div class="section-inner">
       <div class="investment-case">
         <h3>The Investment Case</h3>
-        <p>The faith market is proven, underserved at the theatrical premium tier, and actively seeking content of this quality. The action-adventure genre audience has no direct competitor in this space. Four-quadrant reach means every major release window audience segment is addressed.</p>
-        <p>The packaging vision centers on a Dev Patel + Riz Ahmed marquee pairing with proven global box office reach across multiple demographic segments — targets for packaging, not closed deals. Targeting Antoine Fuqua for studio-confidence at $95–120M scale with demonstrated spiritual register. The $15–24M tax rebate strategy reduces effective cash exposure to $75–100M.</p>
-        <p style="font-size: 0.9rem; color: var(--ivory-dim); margin-top: 1rem;">This brief presents a soft package: vision cast and director targets intended to open conversations — not confirmed attachments or closed talent deals.</p>
-        <p style="color: var(--gold); font-style: italic; font-size: 1.1rem; margin-top: 1.5rem;">This is not a Christmas movie. It is a survival thriller about three men who go into a furnace of their own making, and come out as something the world has never seen.</p>
-        <div style="margin-top: 2rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-          <a href="mailto:contact@thewisemenfilm.com" class="btn-primary" style="background: transparent; color: var(--gold); border: 1px solid var(--gold);">Request Full Package</a>
-        </div>
+        <p>A script that is complete. A premise every audience already knows. A target director whose name opens the financing. A rebate stack that cuts the cash ask by up to a quarter. And a franchise road in "The Order of the Magi."</p>
+        <p>This is not a Christmas film. It is a six-hundred-year promise, told as the road film nobody has made.</p>
       </div>
 
-      <div class="quote-block" style="margin-top: 0;">
-        <blockquote>"Don't let the legacy die on your watch."</blockquote>
-        <cite>— The Wise Men: Journey of the Star · WGA Registered · Development Draft</cite>
-      </div>
     </div>
   </div>
-
 </section>
 
-<!-- Footer -->
 <footer>
-  <div class="footer-logo">The Wise Men</div>
+  <p class="footer-logo">The Wise Men</p>
   <p class="footer-sub">Journey of the Star</p>
   <ul class="footer-links">
-    <li><a href="https://thewisemenfilm.com" target="_blank">thewisemenfilm.com</a></li>
-    <li><a href="https://instagram.com/thewisemenfilm" target="_blank">@TheWiseMenFilm</a></li>
-    <li><a href="mailto:contact@thewisemenfilm.com">Contact</a></li>
+    <li><a href="mailto:contact@thewisemenfilm.com">contact@thewisemenfilm.com</a></li>
+    <li><a href="https://instagram.com/TheWiseMenFilm">@TheWiseMenFilm</a></li>
+    <li><a href="https://thewisemenfilm.com">thewisemenfilm.com</a></li>
   </ul>
-  <p class="footer-legal">WGA Registered · All Rights Reserved · Development Draft — Confidential<br>© The Wise Men: Journey of the Star. Do not distribute without authorization.</p>
+  <p class="footer-legal">A WGA-registered development draft. Cast and director listings are targets only; no one is attached.</p>
 </footer>
 
-<!-- ============================================================
-     JAVASCRIPT
-============================================================ -->
 <script>
-  // Section switching
   function showSection(name) {
     document.querySelectorAll('.page-section').forEach(s => s.classList.remove('active'));
     document.querySelectorAll('.nav-tabs a').forEach(a => a.classList.remove('active'));
     document.getElementById('section-' + name).classList.add('active');
     document.getElementById('tab-' + name).classList.add('active');
     window.scrollTo({ top: 0, behavior: 'smooth' });
+    document.querySelectorAll('#section-' + name + ' .budget-bars').forEach(el => observer.observe(el));
   }
 
-  // Star canvas
-  (function() {
+  (function () {
     const canvas = document.getElementById('star-canvas');
     const ctx = canvas.getContext('2d');
-    let stars = [];
-    let w, h;
-
-    function resize() {
+    let w, h, stars = [];
+    function init() {
       w = canvas.width = window.innerWidth;
       h = canvas.height = window.innerHeight;
-    }
-
-    function init() {
-      resize();
       stars = [];
-      const count = Math.floor((w * h) / 6000);
-      for (let i = 0; i < count; i++) {
+      for (let i = 0; i < 140; i++) {
         stars.push({
-          x: Math.random() * w,
-          y: Math.random() * h,
-          r: Math.random() * 1.2 + 0.2,
-          alpha: Math.random() * 0.6 + 0.1,
-          speed: Math.random() * 0.003 + 0.001,
+          x: Math.random() * w, y: Math.random() * h,
+          r: Math.random() * 1.4 + 0.2,
+          alpha: Math.random() * 0.6 + 0.2,
+          speed: Math.random() * 0.02 + 0.005,
           phase: Math.random() * Math.PI * 2,
-          crimson: Math.random() < 0.08
+          sapphire: Math.random() < 0.08
         });
       }
     }
-
     let t = 0;
     function draw() {
       ctx.clearRect(0, 0, w, h);
       t += 0.01;
       stars.forEach(s => {
-        const alpha = s.alpha * (0.6 + 0.4 * Math.sin(t * s.speed * 100 + s.phase));
+        const a = s.alpha * (0.6 + 0.4 * Math.sin(t * s.speed * 100 + s.phase));
         ctx.beginPath();
         ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
-        if (s.crimson) {
-          ctx.fillStyle = `rgba(224,85,85,${alpha})`;
-        } else {
-          ctx.fillStyle = `rgba(240,230,200,${alpha})`;
-        }
+        ctx.fillStyle = s.sapphire ? `rgba(240,128,136,${a})` : `rgba(240,230,200,${a})`;
         ctx.fill();
       });
       requestAnimationFrame(draw);
     }
-
     window.addEventListener('resize', init);
     init();
     draw();
   })();
 
-  // Animate budget bars on scroll
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.querySelectorAll('.budget-bar-fill').forEach(bar => {
-          const width = bar.style.width;
+          const width = bar.dataset.w || bar.style.width;
+          bar.dataset.w = width;
           bar.style.width = '0';
           setTimeout(() => { bar.style.width = width; }, 100);
         });
       }
     });
   }, { threshold: 0.3 });
-
-  document.querySelectorAll('.budget-bars').forEach(el => observer.observe(el));
 </script>
 
 </body>
